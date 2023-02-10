@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập 9/2</title>
+  </head>
+  <body>
+    <script>
+      // bài 1
+      let A = [2, 3, 4, 5, 6, 7, 8, -10, 30];
+      let max = (min = A[0]);
+
+      for (let i = 1; i < A.length; i++) {
+        max = max > A[i] ? max : A[i];
+        min = min < A[i] ? min : A[i];
+      }
+      document.write(
+        "<h3> Bài 1: Cho 1 mảng A = [2,3,4,5,6,7,8,-10,30].</br> Tìm số lớn nhất , số nhỏ nhất </h3>"
+      );
+      document.write;
+      document.write("Max = ", max);
+      document.write("<br/> Min = ", min);
+
+      // bài 2
+      let string = "Học Javascript Front End";
+      let B = "ở Nesteh";
+
+      document.write(
+        '<h3> Bài 2: cho 1 chuỗi string = ‘Học Javascript Front End’. </br> * Hiển thị độ dài chuổi string.</br> \
+             * Nối chuỗi string với chuỗi B = "ở Nesteh"  </h3>'
+      );
+      document.write("Độ dài của string = ", string.length);
+      document.write("</br> string + B = ", string + B);
+    </script>
+  </body>
+</html>
