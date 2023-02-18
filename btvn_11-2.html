@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>btvn 11/2</title>
+  </head>
+  <body>
+    <script>
+      var A = "Học Javascript Front  End tại Nestech ,Quận 10";
+      // bài 1
+      document.write("<h3> Bài 1 </h3>");
+      document.write(" Vị trí chuỗi Javascript: ", A.indexOf("Javascript"));
+      document.write("</br>", A.replace("Javascript", "ReactJS"));
+      //   bài 2
+      document.write("<h3> Bài 2 </h3>");
+      document.write("A: ", A.replaceAll(" ", ""));
+
+      var B = A.split(",");
+
+      B.map((val, i) => {
+        document.write(`</br> B[${i}] : ${val}`);
+      });
+    </script>
+  </body>
+</html>
